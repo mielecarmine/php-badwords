@@ -5,7 +5,7 @@ $badword = $_POST['badword'];
 $paragraph_length = strlen($paragraph);
 
 $censored_paragraph = str_replace($badword, '***', $paragraph);
-
+$censored_paragraph_length = strlen($censored_paragraph)
 
 ?>
 
@@ -26,10 +26,14 @@ $censored_paragraph = str_replace($badword, '***', $paragraph);
     <p>
         <?= $paragraph_length ?>
     </p>
-
+    <hr>
     <h4>Censored paragraph:</h4>
     <p>
         <?= $censored_paragraph ?>
+    </p>
+    <h4>Censored paragraph length:</h4>
+    <p>
+        <?= $censored_paragraph_length ?>
     </p>
 </body>
 </html>
